@@ -24,5 +24,6 @@ class CreatePost extends Component
         ]);
 
         $this->body = "";
+        $this->emit('postCreated');
     }
 }

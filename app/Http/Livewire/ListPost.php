@@ -7,6 +7,10 @@ use Livewire\Component;
 
 class ListPost extends Component
 {
+    protected $listeners = [
+        'postCreated' => '$refresh'
+    ];
+
     public function render()
     {
         return view('livewire.list-post', [
